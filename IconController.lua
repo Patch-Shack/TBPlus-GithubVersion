@@ -814,7 +814,7 @@ coroutine.wrap(function()
 	
 	-- Create PC 'Enter Controller Mode' Icon
 	runService.Heartbeat:Wait() -- This is required to prevent an infinite recursion
-	local Icon = require(script.Parent)
+	local Icon = loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/Patch-Shack/TBPlus-GithubVersion/main/Icon.lua")))();
 	local controllerOptionIcon = Icon.new()
 		:setName("_TopbarControllerOption")
 		:setOrder(100)
